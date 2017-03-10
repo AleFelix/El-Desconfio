@@ -1,0 +1,33 @@
+package control;
+
+public interface IMensaje {
+	String MSG_CLIENTE_NOMBRE = "C0";
+	String MSG_CLIENTE_INICIAR = "C1";
+	String MSG_CLIENTE_LISTO = "C2";
+	String MSG_CLIENTE_DESCARTAR = "C3";
+	String MSG_CLIENTE_PALOELEGIDO = "C4";
+	String MSG_CLIENTE_DESCONFIAR = "C5";
+	String MSG_CLIENTE_REINICIAR = "C6";
+	String MSG_CLIENTE_DESCONEXION = "C7";
+	String MSG_SERVIDOR_CANTIDAD = "S0";
+	String MSG_SERVIDOR_ID = "S1";
+	String MSG_SERVIDOR_JUGAR = "S2";
+	String MSG_SERVIDOR_CARTAS = "S3";
+	String MSG_SERVIDOR_MOSTRAR = "S4";
+	String MSG_SERVIDOR_ESPERAR = "S5";
+	String MSG_SERVIDOR_PUEDEDESCONFIAR = "S6";
+	String MSG_SERVIDOR_POZO = "S7";
+	String MSG_SERVIDOR_PALO = "S8";
+	String MSG_SERVIDOR_CAMBIOPALO = "S9";
+	String MSG_SERVIDOR_DESVELAR = "S10";
+	String MSG_SERVIDOR_DESCONFIANZA = "S11";
+	String MSG_SERVIDOR_FIN = "S12";
+	String MSG_SERVIDOR_REINICIAR = "S13";
+	String MSG_SERVIDOR_DESCONECTAR = "S14";
+	
+	String getTipo();
+	
+	String getMensaje();
+	
+	int[][] getCartas();
+}
